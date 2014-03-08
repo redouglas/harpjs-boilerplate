@@ -22,10 +22,22 @@ body
 
 header
   display: block
-  padding-right: 140px
+  height: 40px
+  padding: 10px 0
+  border-bottom: 1px solid #b3b3b3
+
+  a.logo
+    float: left
+    padding: 10px 16px
+    text-transform: uppercase
+    letter-spacing: 2px
+    background-color: #000
+    color: #fff
+    text-decoration: none
+    margin-left: 140px
 
   nav ul
-    margin: 0
+    margin: 8px 140px 0 0
     padding: 0
     list-style-type: none
     float: right
@@ -35,10 +47,17 @@ header
       margin-right: 20px
 
       a
-        color: red
+        color: #333
+        text-decoration: none
+        display: block
+        width: 25px
+        height: 25px
+        line-height: 23px
+        round-corners(40px)
+        border: 1px solid #333
 
         &:hover
-          color: blue
+          color: #666
 
         &:before
           font-family: fontawesome
