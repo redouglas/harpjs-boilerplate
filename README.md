@@ -5,8 +5,9 @@ My starter Harp.js app. Get prototyping in minutes, or use it to learn by exampl
 Usage
 -----
 
-* install [Node](http://nodejs.org/download/)
-* install Harp.js ```npm install -g harp```
+* install [Node](http://nodejs.org/download/) `brew install node`
+* install Harp.js `npm install -g harp`
 * clone the repo
-* start the server with ```harp server```
+* cd into the harp-boilerplate folder
+* start the server with `harp server`
 * get coding!
