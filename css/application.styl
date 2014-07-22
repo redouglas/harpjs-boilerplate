@@ -1,5 +1,5 @@
-@import tools
-@import mixins
+@import _tools
+@import _mixins
 
 body
   font-family: "Lato"
@@ -53,7 +53,7 @@ header
         display: block
         width: 25px
         height: 25px
-        line-height: 23px
+        line-height: 25px
         vendor(border-radius, 40px)
         border: 1px solid #333
 
@@ -61,9 +61,11 @@ header
           color: #666
 
         &:before
-          font-family: fontawesome
+          height: 25px
+          line-height: 25px
+          font-family: Ionicons
 
 
-@import responsive
-@import retina
+@import _responsive
+@import _retina
 
