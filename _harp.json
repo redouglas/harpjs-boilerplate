@@ -1,5 +1,11 @@
 {
   "globals" : {
-    "site_name"   :   "A Harp Boilerplate"
+    "site_name"   : "A Harp boilerplate",
+    "site_description" : "",
+    "site_keywords"    : "", 
+    "facebook"    : {
+      "type"        : "",
+      "image"       : ""
+    }
   }
 }
