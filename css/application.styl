@@ -1,10 +1,16 @@
-@import _utilities
-@import _mixins
+@require '_includes/normalize'
+@require '_includes/variables'
+@require '_includes/mixins'
+@require '_includes/utilities'
+@require '_includes/grid'
+
+*
+  box-sizing: border-box
 
 body
   font-family: "Lato"
   text-align: center
-  background: #f4f4f7
+  background: $body-bg
   color: #000
   margin: 0
   padding: 0
@@ -13,16 +19,15 @@ body
     font-size: 65px
     line-height: 1.2em
     padding: 20px 0
-    color: #333
+    color: $black
 
   p
-    margin: 0 140px 30px 140px
     text-align: justify
     line-height: 1.9em
 
 header
   display: block
-  height: 40px
+  height: 60px
   padding: 10px 0
   background-color: #fff
   border-bottom: 1px solid #b3b3b3
@@ -32,13 +37,12 @@ header
     padding: 10px 16px
     text-transform: uppercase
     letter-spacing: 2px
-    background-color: #000
+    background-color: $black
     color: #fff
     text-decoration: none
-    margin-left: 140px
 
   nav ul
-    margin: 8px 140px 0 0
+    margin-top: 8px
     padding: 0
     list-style-type: none
     float: right
@@ -48,24 +52,19 @@ header
       margin-right: 20px
 
       a
-        color: #333
+        color: $black
         text-decoration: none
         display: block
         width: 25px
         height: 25px
         line-height: 25px
         border-radius: 40px
-        border: 1px solid #333
+        border: 1px solid $black
 
         &:hover
-          color: #666
+          color: lighten($black, 20)
 
         &:before
           height: 25px
           line-height: 25px
           font-family: Ionicons
-
-
-@import _responsive
-@import _retina
-

@@ -1,11 +1,20 @@
 {
   "globals" : {
     "site_name"   : "A Harp boilerplate",
-    "site_description" : "",
-    "site_keywords"    : "", 
-    "facebook"    : {
+    "site_description" : "A boilerplate to get you setup harp-ing quickly!",
+    "site_keywords"    : "boilerplate?", 
+    "facebook_meta"    : {
       "type"        : "",
       "image"       : ""
+    },
+    "posts" : {
+      "welcome": {
+        "title"   : "Welcome.",
+        "post"    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis elit, vehicula at varius facilisis, rutrum eget est. Pellentesque viverra luctus mauris, non tincidunt dui tristique a. Vivamus quis feugiat lorem. Fusce suscipit consequat hendrerit. Nam tempor, tellus ut scelerisque varius, velit nunc cursus ligula, ac semper magna tellus sed magna. Donec pulvinar aliquet luctus. Pellentesque mollis semper mauris, a porta neque porttitor quis. Donec posuere, mauris eget dapibus auctor, lacus mi venenatis erat, at porttitor enim ante semper magna. Sed in turpis sit amet nisi vehicula placerat id sit amet arcu. Ut mollis a eros nec fermentum. Donec commodo magna leo, in mattis dolor egestas ac. In adipiscing vulputate arcu, ut ornare mi eleifend sed. Morbi mollis leo vitae nisl ult"
+      },"another-post": {
+        "title"   : "Another Post!",
+        "post"    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis elit, vehicula at varius facilisis, rutrum eget est. Pellentesque viverra luctus mauris, non tincidunt dui tristique a. Vivamus quis feugiat lorem. Fusce suscipit consequat hendrerit. Nam tempor, tellus ut scelerisque varius, velit nunc cursus ligula, ac semper magna tellus sed magna. Donec pulvinar aliquet luctus. Pellentesque mollis semper mauris, a porta neque porttitor quis. Donec posuere, mauris eget dapibus auctor, lacus mi venenatis erat, at porttitor enim ante semper magna. Sed in turpis sit amet nisi vehicula placerat id sit amet arcu. Ut mollis a eros nec fermentum. Donec commodo magna leo, in mattis dolor egestas ac. In adipiscing vulputate arcu, ut ornare mi eleifend sed. Morbi mollis leo vitae nisl ult"
+      }
     }
   }
 }

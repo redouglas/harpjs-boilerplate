@@ -3,15 +3,15 @@ html
   head
     != partial("partials/_meta")
     != partial("partials/_favicons")
-    link(rel="stylesheet", href="css/normalize.css")
     link(rel="stylesheet", href="css/application.css")
     link(href='//fonts.googleapis.com/css?family=Lato:400,700,400italic', rel='stylesheet', type='text/css')
-    link(rel="stylesheet", href="css/ionicons.min.css")
+    link(rel="stylesheet", href="font/ionicons.min.css")
 
-  body
+  body(class="#{ current.source  }")
     != partial("partials/_header")
     main
-      != yield
+      .l-container
+        != yield
 
     script(src="js/jquery-2.0.3.min.js")
     script(src="js/application.js")
