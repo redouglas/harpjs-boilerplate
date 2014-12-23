@@ -5,6 +5,9 @@ cf()
     display: table
   &:after
     clear: both
+    
+random(min,max)
+  return floor(math(0, 'random')*(max - min + 1) + min)
 
 bg-gradient(start, stop)
   background: start /* Old browsers */
