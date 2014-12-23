@@ -1,17 +1,21 @@
+include sections/section.jade
+
 !!!
 html
   head
-    != partial("partials/_meta")
-    != partial("partials/_favicons")
+    != partial("_partials/meta")
+    != partial("_partials/favicons")
     link(rel="stylesheet", href="css/application.css")
     link(href='//fonts.googleapis.com/css?family=Lato:400,700,400italic', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="font/ionicons.min.css")
+    //- if using sections, keep this up here
+    script(src="js/jquery-2.0.3.min.js") 
 
   body(class="#{ current.source  }")
-    != partial("partials/_header")
+    != partial("_partials/header")
     main
       .l-container
         != yield
+      +section('test')
 
-    script(src="js/jquery-2.0.3.min.js")
     script(src="js/application.js")

@@ -1,0 +1,19 @@
+//-
+  Sections! 
+
+  This mixin is used to compartmentalize dom, css, and js into convinientfolders. Simply 
+  make a folder under '_sections' and name your files after the section folder name (eg: 
+  in /test/ you would have _test.jade, test.styl, test.coffee) When you want to render 
+  your section, you can use '+section(test)' and it will render  everything for you. Be 
+  sure to namespace properly! Great for building components and prototyping. Have fun.
+
+  If you want to rename or move your '_sections' folder, just edit the sectionPath var.
+
+  Sections is a prototyping tool only and should not be used in production code for
+  obxious reasons! 
+
+mixin section(name)
+  - var sectionPath = "/sections/" + name + "/"
+  link(rel="stylesheet", href="#{sectionPath}#{name}.css")
+  script(src="#{sectionPath}#{name}.js")
+  != partial('./' + sectionPath + '_' + name + '.jade')
