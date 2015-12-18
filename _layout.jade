@@ -1,6 +1,4 @@
-include sections/section.jade
-
-!!!
+doctype
 html
   head
     != partial("_partials/meta")
@@ -9,14 +7,13 @@ html
     link(href='//fonts.googleapis.com/css?family=Lato:400,700,400italic', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="font/ionicons.min.css")
     //- if using sections, keep this up here
-    script(src="js/jquery-2.0.3.min.js") 
+    script(src="js/jquery-2.0.3.min.js")
 
   body(class="#{ current.source  }")
     != partial("_partials/header")
     main
       .l-container
         != yield
-      +section('test')
     != partial("_partials/footer")
 
     script(src="js/application.js")
